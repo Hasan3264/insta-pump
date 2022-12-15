@@ -1,0 +1,26 @@
+@import "../Variable/fontfamily";
+@import "../basic/_common";
+@import "../mixinit/fontStyle";
+
+#carosole{
+    .accordion{
+        margin-top: 50px;
+        button{
+              @include fontstyle($Inter, 15px, 500, #1E1E1E);
+               position: relative;
+            display: block;
+            text-align: left;
+            width: 100%;
+            padding: 1em 1em;
+            border: none;
+            background: none;
+            outline: none;
+            &:focus{
+                cursor: pointer;
+            }
+        }
+        p{
+            @include fontstyle($Inter, 16px, 400, #787878);
+        }
+    }
+}

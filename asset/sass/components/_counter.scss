@@ -1,0 +1,32 @@
+@import "../Variable/fontfamily";
+@import "../basic/_common";
+@import "../mixinit/fontStyle";
+#counter{
+    margin-top: 100px;
+.counter-p{
+    background-color: #F4F4F4;
+    padding: 50px 50px;
+    border-radius: 10px;
+   
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+ h2{
+        @include fontstyle($Inter, 45px, 700, #000);
+    }
+    ul{
+        li{
+            &:first-child{
+                @include fontstyle($Inter, 45px, 700, #000);
+                
+            }
+            &:last-child{
+                @include fontstyle($Inter, 16px, 400, #787878);
+
+            }
+        }
+
+    }
+}
+}

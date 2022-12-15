@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/venobox.min.css">
+    <link rel="stylesheet" href="./asset/css/slick.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <style>
+        .accordion button:hover::after,
+        .accordion button:focus::after {
+            cursor: pointer;
+            color: #000;
+        }
+
+        .accordion button .accordion-title {
+            padding: 1em 1.5em 1em 0;
+        }
+
+        .accordion button .icon {
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            right: 0;
+            width: 22px;
+            height: 22px;
+        }
+
+        .accordion button .icon::before {
+            display: block;
+            position: absolute;
+            content: "";
+            top: 9px;
+            left: 5px;
+            width: 10px;
+            height: 2px;
+            background: currentColor;
+        }
+
+        .accordion button .icon::after {
+            display: block;
+            position: absolute;
+            content: "";
+            top: 5px;
+            left: 9px;
+            width: 2px;
+            height: 10px;
+            background: currentColor;
+        }
+
+        .accordion button[aria-expanded=true] {
+            color: #E90024 !important;
+        }
+
+        .accordion button[aria-expanded=true] .icon::after {
+            width: 0;
+        }
+
+        .accordion button[aria-expanded=true]+.accordion-content {
+            opacity: 1;
+            max-height: 9em;
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+            padding: 0 10px !important;
+        }
+
+        .accordion .accordion-content {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 200ms linear, max-height 200ms linear;
+            will-change: opacity, max-height;
+        }
+
+        .accordion .accordion-content p {
+            font-size: 1rem;
+            font-weight: 300;
+            margin: 2em 0;
+        }
+
+        .input-effect {
+            position: relative;
+        }
+
+        .effect-19~.focus-border:before,
+        .effect-19~.focus-border:after {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #3399FF;
+            transition: 0.4s;
+        }
+
+        .effect-19~.focus-border:after {
+            top: auto;
+            bottom: 0;
+        }
+
+        .effect-19~.focus-border i:before,
+        .effect-19~.focus-border i:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 2px;
+            height: 0;
+            background-color: #3399FF;
+            transition: 0.6s;
+        }
+
+        .effect-19~.focus-border i:after {
+            left: auto;
+            right: 0;
+        }
+
+        .effect-19:focus~.focus-border:before,
+        .effect-19:focus~.focus-border:after,
+        .has-content.effect-19~.focus-border:before,
+        .has-content.effect-19~.focus-border:after {
+            left: 0;
+            width: 100%;
+            transition: 0.4s;
+        }
+
+        .effect-19:focus~.focus-border i:before,
+        .effect-19:focus~.focus-border i:after,
+        .has-content.effect-19~.focus-border i:before,
+        .has-content.effect-19~.focus-border i:after {
+            top: -1px;
+            height: 100%;
+            transition: 0.6s;
+        }
+
+        .effect-19~ label {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            color: #000 !important;
+            transition: 0.3s;
+            letter-spacing: 0.5px;
+            background-color: #F4F4F4;
+            padding: 5px;
+        }
+
+        .effect-19:focus~label,
+        .has-content.effect-19~label {
+            top: -15px;
+            left: 4px;
+            font-size: 12px;
+            color: #3399FF;
+            transition: 0.3s;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- =================================================================================================================
+                                 nav-ber part starts
+    ================================================================================================================= -->
+     <nav id="navbar" class="navbar navbar-expand-md main-manu p-0 navigation">
+        <div class="container px-0">
+            <div class="logo-hidden">
+               <a href=""><img src="./asset/images/navver/Logo_with_TM_200x 1.png" alt=""></a>
+           </div>
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars text-dark"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto  mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#banner">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Our Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">Contuct us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">FAQs</a>
+                    </li>
+                </ul>
+            
+            </div>
+            <div class="navlast">
+                <ul class="d-flex">
+                    <li><a href=""><img src="./asset/images/navver/Frame.png" alt=""></a></li>
+                    <li><a href=""><img src="./asset/images/navver/Frame(1).png" alt=""></a></li>
+                    <li><a href="" class="btn btn-nav">sign in</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav> 
+   
+    <!-- =================================================================================================================
+                                 nav-ber part ends 
+    ================================================================================================================= -->
+    <!-- =================================================================================================================
+                                 banner part starts 
+    ================================================================================================================= -->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 text-part">
+                    <h1>
+                        Collect Real & Organic <span>
+                            Instagram
+                        </span> Followers
+                    </h1>
+                    <p>We're the only service in the world that provides you with likes from real people. Try our free
+                        trial and see for yourself.</p>
+                    <a href="" class="btn">Get Started</a>
+                </div>
+                <div class="col-lg-7 col-md-12  main-part">
+                    <img class="main-p" style="width: 290px; margin-left: 45%;" src="./asset/images/banner/Group 13.png" alt="">
+                    <div class="card">
+                        <div class="card-head">
+                            <p>‘’I got over 3,500 new followers my first month, and it helped me catapult my influencer
+                                marketing business.’’</p>
+                        </div>
+                        <div class="card-bottom d-flex">
+                            <div class="cb-f d-flex">
+                                <div class="cb-f-p">
+                                    <img class="img-fluid w-100" src="./asset/images/banner/Ellipse 2.png" alt="">
+                                </div>
+                                <div class="cb-f-t">
+                                    <h6>Kiyan S.</h6>
+                                    <p>Sheikh Physique</p>
+                                </div>
+                            </div>
+                            <div class="cb-l">
+                                <a href=""><img src="./asset/images/banner/instagram-2016-5 1.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-p">
+                        <img src="./asset/images/banner/Rectangle 12.png" alt="">
+                        <ul class="d-flex">
+                            <li><i class="bi bi-house-door"></i></li>
+                            <li><i class="bi bi-search"></i></li>
+                            <li><i class="bi bi-clock"></i></li>
+                            <li><i class="bi bi-heart"></i>
+                                <div class="over d-flex">
+                                    <i class="bi bi-heart-fill"></i> <span> 3.8k</span>
+                                    <div class="triangle-down"></div>
+                                </div>
+                            </li>
+                            <li><i class="bi bi-person"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =================================================================================================================
+                                 banner part ends 
+    ================================================================================================================= -->
+    <!-- =================================================================================================================
+                                 counter part starts 
+    ================================================================================================================= -->
+    <section id="counter">
+        <div class="container">
+            <div class="row counter-p">
+                <div class="col-lg-3 col-6">
+                    <h2>Instagram <br>
+                        Likes</h2>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <ul>
+                        <li><span>13.90</span>M</li>
+                        <li>Likes Given</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <ul>
+                        <li><span>13.90</span>M</li>
+                        <li>Likes Given</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <ul>
+                        <li><span>13.90</span>M</li>
+                        <li>Likes Given</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- =================================================================================================================
+                                 counter part ends 
+    ================================================================================================================= -->
+    <!-- =================================================================================================================
+                                 pumps part start 
+    ================================================================================================================= -->
+    <section id="pump">
+        <div class="container">
+            <div class="common-header text-center">
+                <h2>How Pump Insta Work</h2>
+                <p>However, if they see other members in their social network actively participating, <br>
+                    it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!
+                    Buy Instagram followers, <br> likes and views that are delivered instantly and safely.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 card-part">
+                    <img src="./asset/images/pump/Frame(1).png" alt="">
+                    <h5>Pick a package</h5>
+                    <p>Choose the Instagram likes, followers, or views package that you're interested in. Feel free to
+                        get in touch if you have an inquiry about a bulk order.</p>
+                </div>
+                <div class="col-lg-4 card-part">
+                    <img src="./asset/images/pump/Frame.png" alt="">
+                    <h5>Pick a package</h5>
+                    <p>Choose the Instagram likes, followers, or views package that you're interested in. Feel free to
+                        get in touch if you have an inquiry about a bulk order.</p>
+                </div>
+                <div class="col-lg-4 card-part">
+                    <img src="./asset/images/pump/Group 83.png" alt="">
+                    <h5>Pick a package</h5>
+                    <p>Choose the Instagram likes, followers, or views package that you're interested in. Feel free to
+                        get in touch if you have an inquiry about a bulk order.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- =================================================================================================================
+                                 pumps part ends 
+    ================================================================================================================= -->
+    <!-- =================================================================================================================
+                                 pumps part ends 
+    ================================================================================================================= -->
+    <section id="pumps">
+        <div class="container">
+            <div class="col-lg-12 pump-part position-relative">
+                <img class="w-100 img-fluid" src="./asset/images/video/Rectangle 29.png" alt="">
+                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/b8s0DSQJ9Hk"><img
+                        class="position-absolute vanubox-video-butt" style="left: 50%; top: 50%; transform: translate(-50%, -50%);"
+                        src="./asset/images/video/Group 79.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <!-- =================================================================================================================
+                                 pumps part ends 
+    ================================================================================================================= -->
+    <!-- =================================================================================================================
+                               chose  pumps part starts 
+    ================================================================================================================= -->
+    <section id="choose_pum">
+        <img class="img-p" src="./asset/images/choseing pump/Frame.png" alt="">
+        <div class="container">
+            <div class="common-header text-center">
+                <h2>Why choose Pump Insta</h2>
+                <p>However, if they see other members in their social network actively participating, <br>
+                    it makes investing time into a social media profile both fun and easy. <br> Pump Insta is here to
+                    help! Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 card-sec">
+                    <img src="./asset/images/choseing pump/Group 38.png" alt="">
+                    <h5>
+                        High Quality Profiles
+                    </h5>
+                    <p>When purchasing followers, likes, or views for your Instagram profile, you need those accounts to
+                        be of the highest quality. Pump Insta is famed for quality service and that’s why all our
+                        services are fulfilled with genuine users and high-quality profiles, so you know your Insta
+                        reputation is in good hands</p>
+                </div>
+                <div class="col-lg-4 card-sec">
+                    <img src="./asset/images/choseing pump/Group 41.png" alt="">
+                    <h5>
+                        24/7 Customer Support
+                    </h5>
+                    <p>When purchasing followers, likes, or views for your Instagram profile, you need those accounts to
+                        be of the highest quality. Pump Insta is famed for quality service and that’s why all our
+                        services are fulfilled with genuine users and high-quality profiles, so you know your Insta
+                        reputation is in good hands</p>
+                </div>
+                <div class="col-lg-4 card-sec">
+                    <img src="./asset/images/choseing pump/Vector.png" alt="">
+                    <h5>
+                        Instant Delivery
+                    </h5>
+                    <p>When purchasing followers, likes, or views for your Instagram profile, you need those accounts to
+                        be of the highest quality. Pump Insta is famed for quality service and that’s why all our
+                        services are fulfilled with genuine users and high-quality profiles, so you know your Insta
+                        reputation is in good hands</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =================================================================================================================
+                               chose  pumps part ends 
+    ================================================================================================================= -->
+    <!-- =================================================================================================================
+                               work part ends 
+    ================================================================================================================= -->
+    <section id="work">
+        <div class="container">
+            <div class="common-header text-center">
+                <h2>How Pump Insta Work</h2>
+                <p>However, if they see other members in their social network actively participating, <br>
+                    it makes investing time into a social media profile both fun and easy. <br> Pump Insta is here to
+                    help! Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 card-sec">
+                    <button class="btn save-d">Save $2</button>
+                    <h5>Instagram Followers</h5>
+                    <ul>
+                        <li><i class="bi bi-check-lg"></i> Likes From Real Users</li>
+                        <li><i class="bi bi-check-lg"></i> Instant Start (No delay)</li>
+                        <li><i class="bi bi-check-lg"></i> Control Delivery Speed</li>
+                    </ul>
+                    <h6>$9.00</h6>
+                    <button class="btn prg">Purchase</button>
+                </div>
+                <div class="col-lg-4 card-sec">
+                    <button class="btn save-d">Save $2</button>
+                    <h5>Instagram Followers</h5>
+                    <ul>
+                        <li><i class="bi bi-check-lg"></i> Likes From Real Users</li>
+                        <li><i class="bi bi-check-lg"></i> Instant Start (No delay)</li>
+                        <li><i class="bi bi-check-lg"></i> Control Delivery Speed</li>
+                    </ul>
+                    <h6>$9.00</h6>
+                    <button class="btn prg">Purchase</button>
+                </div>
+                <div class="col-lg-4 card-sec">
+                    <button class="btn save-d">Save $2</button>
+                    <h5>Instagram Followers</h5>
+                    <ul>
+                        <li><i class="bi bi-check-lg"></i> Likes From Real Users</li>
+                        <li><i class="bi bi-check-lg"></i> Instant Start (No delay)</li>
+                        <li><i class="bi bi-check-lg"></i> Control Delivery Speed</li>
+                    </ul>
+                    <h6>$9.00</h6>
+                    <button class="btn prg">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =================================================================================================================
+                               work part ends 
+    ================================================================================================================= -->
+    <!-- =================================================================================================================
+                               review   part ends 
+    ================================================================================================================= -->
+    <section id="review">
+        <div class="container">
+            <div class="common-header text-center">
+                <h2>Our Customer Rating</h2>
+                <p>However, if they see other members in their social network actively participating, <br>
+                    it makes investing time into a social media profile both fun and easy. <br> Pump Insta is here to
+                    help! Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-12 me-auto card-part">
+                    <div class="ch d-flex"><img src="./asset/images/reating/Ellipse 3(1).png" alt="">
+                        <h5>Lynn Patterson</h5> <a href=""><i class="bi bi-three-dots"></i></a>
+                    </div>
+                    <div class="r-m">
+                        <ul class="d-flex">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p>However, if they see other members in their social network actively participating, it makes
+                            investing time into a social media profile both fun and easy. Pump Insta is here to help!
+                        </p>
+                    </div>
+                    <div class="c-b d-flex" style="justify-content:space-between;">
+                        <div class="cb-s">
+                            <ul class="d-flex">
+                                <li><a href=""><i class="bi bi-heart"></i></a></li>
+                                <li> <a href=""><i class="bi bi-chat-square"></i></a></li>
+                                <li> <a href=""><i class="bi bi-send"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="cb-e">
+                            <a href=""><i class="bi bi-bookmark"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 me-auto card-part">
+                    <div class="ch d-flex"><img src="./asset/images/reating/Ellipse 3(2).png" alt="">
+                        <h5>Lynn Patterson</h5> <a href=""><i class="bi bi-three-dots"></i></a>
+                    </div>
+                    <div class="r-m">
+                        <ul class="d-flex">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p>However, if they see other members in their social network actively participating, it makes
+                            investing time into a social media profile both fun and easy. Pump Insta is here to help!
+                        </p>
+                    </div>
+                    <div class="c-b d-flex" style="justify-content:space-between;">
+                        <div class="cb-s">
+                            <ul class="d-flex">
+                                <li><a href=""><i class="bi bi-heart"></i></a></li>
+                                <li> <a href=""><i class="bi bi-chat-square"></i></a></li>
+                                <li> <a href=""><i class="bi bi-send"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="cb-e">
+                            <a href=""><i class="bi bi-bookmark"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 me-auto card-part">
+                    <div class="ch d-flex"><img src="./asset/images/reating/Ellipse 3.png" alt="">
+                        <h5>Lynn Patterson</h5> <a href=""><i class="bi bi-three-dots"></i></a>
+                    </div>
+                    <div class="r-m">
+                        <ul class="d-flex">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p>However, if they see other members in their social network actively participating, it makes
+                            investing time into a social media profile both fun and easy. Pump Insta is here to help!
+                        </p>
+                    </div>
+                    <div class="c-b d-flex" style="justify-content:space-between;">
+                        <div class="cb-s">
+                            <ul class="d-flex">
+                                <li><a href=""><i class="bi bi-heart"></i></a></li>
+                                <li> <a href=""><i class="bi bi-chat-square"></i></a></li>
+                                <li> <a href=""><i class="bi bi-send"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="cb-e">
+                            <a href=""><i class="bi bi-bookmark"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- =================================================================================================================
+                               review   part ends 
+    ================================================================================================================= -->
+    <!-- =================================================================================================================
+                               carosoul part ends 
+    ================================================================================================================= -->
+    <section id="carosole">
+        <div class="container">
+            <div class="common-header text-center">
+                <h2>Everything You Need to Know</h2>
+                <p>However, if they see other members in their social network actively participating, <br>
+                    it makes investing time into a social media profile both fun and easy. <br> Pump Insta is here to
+                    help! Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">
+                                    Is There Any Risk To My Account?
+                                </span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>However, if they see other members in their social network actively participating, it
+                                    makes investing time into a social media profile both fun and easy. Pump Insta is
+                                    here to help! it makes investing time into a social media profile both fun and easy.
+                                    Pump Insta is here to help!</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">
+                                    How Are You Different From Other Services?
+                                </span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>However, if they see other members in their social network actively participating, it
+                                    makes investing time into a social media profile both fun and easy. Pump Insta is
+                                    here to help! it makes investing time into a social media profile both fun and easy.
+                                    Pump Insta is here to help!</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">
+                                    Are The Followers Real?
+                                </span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>However, if they see other members in their social network actively participating, it
+                                    makes investing time into a social media profile both fun and easy. Pump Insta is
+                                    here to help! it makes investing time into a social media profile both fun and easy.
+                                    Pump Insta is here to help!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Will I
+                                    Lose My Followers If I Cancel?</span><span class="icon"
+                                    aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>CodeHim is one of the BEST developer websites that provide web designers and
+                                    developers with a simple way to preview and download a variety of free code &amp;
+                                    scripts.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How Fast
+                                    Will I See Results?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>CodeHim is one of the BEST developer websites that provide web designers and
+                                    developers with a simple way to preview and download a variety of free code &amp;
+                                    scripts.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Do You
+                                    Follow / Unfollow?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>CodeHim is one of the BEST developer websites that provide web designers and
+                                    developers with a simple way to preview and download a variety of free code &amp;
+                                    scripts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =================================================================================================================
+                               carosole part ends 
+    ================================================================================================================= -->
+    <!-- =================================================================================================================
+                               footer part ends 
+    ================================================================================================================= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 f-f">
+                    <img src="./asset/images/navver/Logo_with_TM_200x 1.png" alt="">
+                    <p class="mt-4">However, if they see other members in their social network actively participating,
+                        it makes investing time into a social.</p>
+                    <ul class="d-flex mt-3">
+                        <li class="me-3"><a href=""><i class="bi bi-facebook"></i></a></li>
+                        <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 f-2">
+                    <h5>Our Policy</h5>
+                    <ul>
+                        <li><a href="">Search</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Refund Policy</a></li>
+                        <li><a href="">Money Back Guarantee</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 f-f f-2">
+                    <h5 class="mb-4">Sign Up & Save</h5>
+                    <p class="mb-3">However, if they see other members in their social network actively.</p>
+                    <form class="input-effect">
+                        <input class="effect-19" type="text">
+                        <button class="btn" for="">Subscribe</button>
+                        <span class="focus-border">
+                            <i></i>
+                        </span>
+                        <label for="" 2>Your Email</label>
+                    </form>
+                </div>
+            </div>
+            <div class="back-to-top">
+                    <i class="bi bi-arrow-down-up"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- =================================================================================================================
+                               footer part ends 
+    ================================================================================================================= -->
+    <!-- ============================= js part -->
+    <script src="https://kit.fontawesome.com/583a2364d2.js" crossorigin="anonymous"></script>
+    <script src="./asset/js/bootstrap.bundle.min.js"></script>
+    <script src="./asset/js/jquery-1.12.4.min.js"></script>
+    <script src="./asset/js/venobox.min.js"></script>
+    <script src="./asset/js/jquery.counterup.min.js"></script>
+    <script src="./asset/js/hoverinput.js"></script>
+    <script src="./asset/js/waypoints.min.js"></script>
+    <script src="./asset/js/script.js"></script>
+    <script>
+        new VenoBox({
+            selector: ".venobox"
+        });
+        $(".navbar-toggler").click(function(){
+               $(".navlast").toggle(1000);
+        });
+    </script>
+    <script>
+        const items = document.querySelectorAll(".accordion button");
+
+        function toggleAccordion() {
+            const itemToggle = this.getAttribute('aria-expanded');
+
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute('aria-expanded', 'false');
+            }
+
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
+</body>
+
+</html>

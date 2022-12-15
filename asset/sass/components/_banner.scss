@@ -1,0 +1,155 @@
+@import "../Variable/fontfamily";
+@import "../basic/_common";
+@import "../mixinit/fontStyle";
+
+#banner {
+    margin-top: 50px;
+
+    .text-part {
+        h1 {
+            text-transform: capitalize;
+            @include fontstyle($Inter, 49px, 700, #000);
+            line-height: 85px;
+
+            span {
+                color: #E90024;
+            }
+        }
+
+        p {
+            margin-top: 15px;
+            @include fontstyle($Inter, 16px, 400, #787878);
+        }
+
+        a {
+            @include fontstyle($Inter, 16px, 400, #fff);
+            background-color: #E90024;
+            margin-top: 25px;
+        }
+    }
+
+    .main-part {
+        position: relative;
+
+        .card {
+            position: absolute;
+            left: 0%;
+            top: 30%;
+            width: 500px;
+            padding: 20px 50px;
+            background-color: #ffffff;
+            border: none;
+
+            .card-head {
+                p {
+                    @include fontstyle($Inter, 16px, 400, #4B4B4B);
+                    line-height: 26px;
+                }
+            }
+
+            .card-bottom {
+                margin-top: 20px;
+
+                .cb-f {
+                    width: 70%;
+
+                    .cb-f-p {
+                        width: 30%;
+                        margin-right: 10px;
+                    }
+
+                    .cb-f-t {
+                        margin-top: 10px;
+
+                        h6 {
+                            @include fontstyle($Inter, 20px, 600, #4B4B4B);
+                        }
+
+                        p {
+                            @include fontstyle($Inter, 16px, 400, #787878);
+
+                        }
+                    }
+                }
+
+                .cb-l {
+                    margin-left: auto;
+                }
+            }
+        }
+
+        .img-p {
+            position: absolute;
+            right: -87px;
+            top: 15%;
+            padding: 20px 20px;
+            background-color: rgb(245, 245, 245);
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+
+            ul {
+                li {
+                    color: #4B4B4B;
+                    margin-right: 33px;
+                    margin-top: 25px;
+                    cursor: pointer;
+                    transition: all linear .3s;
+                    -webkit-transition: all linear .3s;
+                    -moz-transition: all linear .3s;
+                    -ms-transition: all linear .3s;
+                    -o-transition: all linear .3s;
+                     position: relative;
+                     .over{
+                        transition: all linear .3s;
+                    -webkit-transition: all linear .3s;
+                    -moz-transition: all linear .3s;
+                    -ms-transition: all linear .3s;
+                    -o-transition: all linear .3s;
+                        opacity: 0;
+                        position: absolute;
+                        top: -39px;
+                        left: -16px;
+                        padding: 5px;
+                         border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                        background-color: #E90024;
+                         color: #ffff;
+                         i{
+                            font-size: 15px;
+                            margin-right: 8px;
+                         }
+                         &:hover{
+                                i{
+                                    color: #fff;
+                                }
+                            }
+                         
+                     }
+                    i {
+                        font-size: 20px;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                   
+                    &:hover {
+                        .over{
+                            opacity: 1;
+                        }
+                        i{
+                            color: #E90024;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

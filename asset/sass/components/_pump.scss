@@ -1,0 +1,32 @@
+@import "../Variable/fontfamily";
+@import "../basic/_common";
+@import "../mixinit/fontStyle";
+
+.common-header {
+    margin-top: 140px;
+
+    h2 {
+        @include fontstyle($Inter, 45px, 600, #000);
+    }
+
+    p {
+        margin-top: 15px;
+        @include fontstyle($Inter, 16px, 400, #787878);
+    }
+}
+
+#pump {
+    .card-part {
+        padding: 80px 60px;
+           background-color: #ffff;
+        h5 {
+            margin-top: 30px;
+            @include fontstyle($Inter, 25px, 500, #1E1E1E);
+            margin-bottom: 20px;
+        }
+        p{
+            @include fontstyle($Inter, 14px, 400, #787878);
+
+        }
+    }
+}

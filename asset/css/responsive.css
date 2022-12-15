@@ -1,0 +1,127 @@
+
+@media (min-width: 768px) {
+  
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+@media (max-width: 575.98px) {
+
+#navbar{margin-top: 0;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+  background-color: #f1f1f1e7;
+  line-height: 60px;
+}
+#navbar .logo-hidden {
+  display: none;
+}
+#navbar .navlast{
+  margin-right: 0;
+}
+#navbar .navbar-toggler:focus .navlast{
+  display: none;
+}
+#navbar .navbar-toggler:focus {    
+  box-shadow: 0 0 0 0;
+}
+/* ===============banner ================================== */
+#banner {
+  margin-top: 12px;
+}
+#banner .main-part{
+  margin-top: 20px;
+}
+#banner .main-part .img-p{
+  display: none;
+}
+#banner .main-part .main-p{
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+#banner .main-part .card{
+  width: 100%;
+  padding: 20px 10px;
+}
+#banner .text-part h1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+}
+#banner .text-part p {
+  margin-top: 0px;
+}
+#counter {
+  margin-top: 5px;
+}
+#counter .counter-p {
+  padding: 34px 10px;}
+  #counter .counter-p h2 {
+  font-size: 28px;}
+  #counter .counter-p ul li:first-child {
+    font-size: 30px;
+  }
+
+
+  .common-header {
+  margin-top: 30px;
+}
+.common-header p {
+  font-size: 14px;
+}
+/* pu,p part */
+#pump .card-part {
+  text-align: center;
+  padding: 36px 30px;
+  background-color: white;
+}
+#pumps .vanubox-video-butt{
+  width: 50px;
+  height: 50px;
+}
+#choose_pum{
+  margin-top: 10px;
+  padding: 20px 0px;
+}
+#choose_pum .img-p{
+  display: none;
+}
+#choose_pum .card-sec{
+  margin-top: 45px;
+  text-align: center;
+}
+#work .card-sec h5, #work .card-sec ul,#work .card-sec h6{
+  text-align: center;
+}
+#work .card-sec{
+  margin-top: 20px;
+  padding: 50px 40px;
+}
+.common-header h2{
+  font-size: 40px;
+}
+#review .card-part{
+  width: 100%;
+}
+#footer{
+  text-align: center;
+}
+#footer .f-2 .input-effect input{
+  width: 100%;
+}
+#footer .f-f ul{
+ justify-content: center;
+}
+#footer .f-2{
+ margin-top: 20px;
+}
+}

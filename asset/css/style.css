@@ -1,0 +1,1069 @@
+@font-face {
+  src: url("fontfam-inter/Inter-VariableFont_slnt,wght.ttf");
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* ======================================  common css end  ============================================ */
+/* ======================================   css  ============================================ */
+/* ======================================   css  ============================================ */
+/* footer part end */
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  background: #000;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 999;
+  border-radius: 20px 0px;
+  -webkit-border-radius: 20px 0px;
+  -moz-border-radius: 20px 0px;
+  -ms-border-radius: 20px 0px;
+  -o-border-radius: 20px 0px;
+}
+
+:focus {
+  outline: none;
+}
+
+.manu-fix {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  line-height: 50px !important;
+  z-index: 999;
+}
+
+#navbar {
+  line-height: 100px;
+}
+#navbar .logo-hidden {
+  margin-right: 180px;
+}
+#navbar .navbar-nav li {
+  margin-right: 40px;
+}
+#navbar .navbar-nav li a {
+  text-transform: capitalize;
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Inter";
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#navbar .navbar-nav li a:hover {
+  color: #E90024;
+}
+#navbar .navlast ul li {
+  margin-right: 20px;
+}
+#navbar .navlast ul li a {
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Inter";
+}
+#navbar .navlast ul .btn-nav {
+  background-color: #E90024;
+}
+
+@font-face {
+  src: url("fontfam-inter/Inter-VariableFont_slnt,wght.ttf");
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* ======================================  common css end  ============================================ */
+/* ======================================   css  ============================================ */
+/* ======================================   css  ============================================ */
+/* footer part end */
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  background: #000;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 999;
+  border-radius: 20px 0px;
+  -webkit-border-radius: 20px 0px;
+  -moz-border-radius: 20px 0px;
+  -ms-border-radius: 20px 0px;
+  -o-border-radius: 20px 0px;
+}
+
+:focus {
+  outline: none;
+}
+
+#banner {
+  margin-top: 50px;
+}
+#banner .text-part h1 {
+  text-transform: capitalize;
+  color: #000;
+  font-weight: 700;
+  font-size: 49px;
+  font-family: "Inter";
+  line-height: 85px;
+}
+#banner .text-part h1 span {
+  color: #E90024;
+}
+#banner .text-part p {
+  margin-top: 15px;
+  color: #787878;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+}
+#banner .text-part a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+  background-color: #E90024;
+  margin-top: 25px;
+}
+#banner .main-part {
+  position: relative;
+}
+#banner .main-part .card {
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  width: 500px;
+  padding: 20px 50px;
+  background-color: #ffffff;
+  border: none;
+}
+#banner .main-part .card .card-head p {
+  color: #4B4B4B;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+  line-height: 26px;
+}
+#banner .main-part .card .card-bottom {
+  margin-top: 20px;
+}
+#banner .main-part .card .card-bottom .cb-f {
+  width: 70%;
+}
+#banner .main-part .card .card-bottom .cb-f .cb-f-p {
+  width: 30%;
+  margin-right: 10px;
+}
+#banner .main-part .card .card-bottom .cb-f .cb-f-t {
+  margin-top: 10px;
+}
+#banner .main-part .card .card-bottom .cb-f .cb-f-t h6 {
+  color: #4B4B4B;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Inter";
+}
+#banner .main-part .card .card-bottom .cb-f .cb-f-t p {
+  color: #787878;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+}
+#banner .main-part .card .card-bottom .cb-l {
+  margin-left: auto;
+}
+#banner .main-part .img-p {
+  position: absolute;
+  right: -87px;
+  top: 15%;
+  padding: 20px 20px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#banner .main-part .img-p ul li {
+  color: #4B4B4B;
+  margin-right: 33px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  position: relative;
+}
+#banner .main-part .img-p ul li .over {
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  opacity: 0;
+  position: absolute;
+  top: -39px;
+  left: -16px;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #E90024;
+  color: white;
+}
+#banner .main-part .img-p ul li .over i {
+  font-size: 15px;
+  margin-right: 8px;
+}
+#banner .main-part .img-p ul li .over:hover i {
+  color: #fff;
+}
+#banner .main-part .img-p ul li i {
+  font-size: 20px;
+}
+#banner .main-part .img-p ul li:last-child {
+  margin-right: 0;
+}
+#banner .main-part .img-p ul li:hover .over {
+  opacity: 1;
+}
+#banner .main-part .img-p ul li:hover i {
+  color: #E90024;
+}
+
+@font-face {
+  src: url("fontfam-inter/Inter-VariableFont_slnt,wght.ttf");
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* ======================================  common css end  ============================================ */
+/* ======================================   css  ============================================ */
+/* ======================================   css  ============================================ */
+/* footer part end */
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  background: #000;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 999;
+  border-radius: 20px 0px;
+  -webkit-border-radius: 20px 0px;
+  -moz-border-radius: 20px 0px;
+  -ms-border-radius: 20px 0px;
+  -o-border-radius: 20px 0px;
+}
+
+:focus {
+  outline: none;
+}
+
+#counter {
+  margin-top: 100px;
+}
+#counter .counter-p {
+  background-color: #F4F4F4;
+  padding: 50px 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#counter .counter-p h2 {
+  color: #000;
+  font-weight: 700;
+  font-size: 45px;
+  font-family: "Inter";
+}
+#counter .counter-p ul li:first-child {
+  color: #000;
+  font-weight: 700;
+  font-size: 45px;
+  font-family: "Inter";
+}
+#counter .counter-p ul li:last-child {
+  color: #787878;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+}
+
+@font-face {
+  src: url("fontfam-inter/Inter-VariableFont_slnt,wght.ttf");
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* ======================================  common css end  ============================================ */
+/* ======================================   css  ============================================ */
+/* ======================================   css  ============================================ */
+/* footer part end */
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  background: #000;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 999;
+  border-radius: 20px 0px;
+  -webkit-border-radius: 20px 0px;
+  -moz-border-radius: 20px 0px;
+  -ms-border-radius: 20px 0px;
+  -o-border-radius: 20px 0px;
+}
+
+:focus {
+  outline: none;
+}
+
+.common-header {
+  margin-top: 140px;
+}
+.common-header h2 {
+  color: #000;
+  font-weight: 600;
+  font-size: 45px;
+  font-family: "Inter";
+}
+.common-header p {
+  margin-top: 15px;
+  color: #787878;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+}
+
+#pump .card-part {
+  padding: 80px 60px;
+  background-color: white;
+}
+#pump .card-part h5 {
+  margin-top: 30px;
+  color: #1E1E1E;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Inter";
+  margin-bottom: 20px;
+}
+#pump .card-part p {
+  color: #787878;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Inter";
+}
+
+@font-face {
+  src: url("fontfam-inter/Inter-VariableFont_slnt,wght.ttf");
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* ======================================  common css end  ============================================ */
+/* ======================================   css  ============================================ */
+/* ======================================   css  ============================================ */
+/* footer part end */
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  background: #000;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 999;
+  border-radius: 20px 0px;
+  -webkit-border-radius: 20px 0px;
+  -moz-border-radius: 20px 0px;
+  -ms-border-radius: 20px 0px;
+  -o-border-radius: 20px 0px;
+}
+
+:focus {
+  outline: none;
+}
+
+#choose_pum {
+  padding: 150px 0px;
+  background-color: #F4F4F4;
+  margin-top: 80px;
+  position: relative;
+}
+#choose_pum .img-p {
+  position: absolute;
+  right: 100px;
+  top: -70px;
+}
+#choose_pum .common-header {
+  margin-top: 0px !important;
+}
+#choose_pum .card-sec {
+  margin-top: 70px;
+}
+#choose_pum .card-sec img {
+  width: 60px;
+  margin-bottom: 35px;
+}
+#choose_pum .card-sec h5 {
+  color: #1E1E1E;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Inter";
+  margin-bottom: 25px;
+}
+#choose_pum .card-sec p {
+  color: #787878;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+}
+
+@font-face {
+  src: url("fontfam-inter/Inter-VariableFont_slnt,wght.ttf");
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* ======================================  common css end  ============================================ */
+/* ======================================   css  ============================================ */
+/* ======================================   css  ============================================ */
+/* footer part end */
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  background: #000;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 999;
+  border-radius: 20px 0px;
+  -webkit-border-radius: 20px 0px;
+  -moz-border-radius: 20px 0px;
+  -ms-border-radius: 20px 0px;
+  -o-border-radius: 20px 0px;
+}
+
+:focus {
+  outline: none;
+}
+
+#work .card-sec {
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 70px 55px;
+  box-shadow: 2px 2px 14px #f4f4f4;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-top: 55px;
+}
+#work .card-sec .save-d {
+  background-color: rgba(233, 0, 36, 0.1019607843);
+  color: #E90024;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Inter";
+}
+#work .card-sec h5 {
+  text-align: start;
+  color: #1E1E1E;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Inter";
+  margin-top: 30px;
+}
+#work .card-sec ul {
+  text-align: start;
+}
+#work .card-sec ul li {
+  margin-top: 15px;
+  color: #787878;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+}
+#work .card-sec ul li i {
+  color: #5EBD78;
+  margin-right: 5px;
+}
+#work .card-sec h6 {
+  text-align: start;
+  color: #1E1E1E;
+  font-weight: 600;
+  font-size: 45px;
+  font-family: "Inter";
+  margin-top: 30px;
+}
+#work .card-sec .prg {
+  margin-top: 30px;
+  border: 1px solid #E90024;
+  color: #E90024;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Inter";
+}
+#work .card-sec .prg:hover {
+  background-color: #E90024;
+  color: #FFFFFF;
+}
+
+@font-face {
+  src: url("fontfam-inter/Inter-VariableFont_slnt,wght.ttf");
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* ======================================  common css end  ============================================ */
+/* ======================================   css  ============================================ */
+/* ======================================   css  ============================================ */
+/* footer part end */
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  background: #000;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 999;
+  border-radius: 20px 0px;
+  -webkit-border-radius: 20px 0px;
+  -moz-border-radius: 20px 0px;
+  -ms-border-radius: 20px 0px;
+  -o-border-radius: 20px 0px;
+}
+
+:focus {
+  outline: none;
+}
+
+#carosole .accordion {
+  margin-top: 50px;
+}
+#carosole .accordion button {
+  color: #1E1E1E;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Inter";
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 1em;
+  border: none;
+  background: none;
+  outline: none;
+}
+#carosole .accordion button:focus {
+  cursor: pointer;
+}
+#carosole .accordion p {
+  color: #787878;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+}
+
+@font-face {
+  src: url("fontfam-inter/Inter-VariableFont_slnt,wght.ttf");
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* ======================================  common css end  ============================================ */
+/* ======================================   css  ============================================ */
+/* ======================================   css  ============================================ */
+/* footer part end */
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  background: #000;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 999;
+  border-radius: 20px 0px;
+  -webkit-border-radius: 20px 0px;
+  -moz-border-radius: 20px 0px;
+  -ms-border-radius: 20px 0px;
+  -o-border-radius: 20px 0px;
+}
+
+:focus {
+  outline: none;
+}
+
+#review .card-part {
+  width: 32%;
+  border-radius: 10px;
+  box-shadow: 1px 0px 14px rgba(78, 78, 78, 0.253);
+  margin-top: 40px;
+  padding-bottom: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#review .card-part .ch {
+  justify-content: space-between;
+  padding: 20px;
+}
+#review .card-part .ch img {
+  width: 60px;
+  height: 60px;
+}
+#review .card-part .ch h5 {
+  color: #1E1E1E;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Inter";
+  align-self: center;
+}
+#review .card-part .ch a {
+  align-self: center;
+  color: #1E1E1E;
+}
+#review .card-part .r-m {
+  border-radius: 10px;
+  margin: auto;
+  width: 90%;
+  padding: 30px;
+  background-color: #f1f1f1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#review .card-part .r-m ul li {
+  color: #FFA723;
+  margin-left: 5px;
+}
+#review .card-part .r-m p {
+  margin-top: 20px;
+  color: #787878;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+}
+#review .card-part .c-b {
+  margin-top: 10px;
+  padding: 0px 30px;
+}
+#review .card-part .c-b ul li {
+  margin-right: 10px;
+}
+#review .card-part .c-b i {
+  color: #c4c4c4;
+}
+
+@font-face {
+  src: url("fontfam-inter/Inter-VariableFont_slnt,wght.ttf");
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* ======================================  common css end  ============================================ */
+/* ======================================   css  ============================================ */
+/* ======================================   css  ============================================ */
+/* footer part end */
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  background: #000;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 999;
+  border-radius: 20px 0px;
+  -webkit-border-radius: 20px 0px;
+  -moz-border-radius: 20px 0px;
+  -ms-border-radius: 20px 0px;
+  -o-border-radius: 20px 0px;
+}
+
+:focus {
+  outline: none;
+}
+
+#footer {
+  margin-top: 80px;
+  padding: 80px 0px;
+  background-color: #F4F4F4;
+}
+#footer .f-f p {
+  color: #787878;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+}
+#footer .f-2 h5 {
+  color: #1E1E1E;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Inter";
+}
+#footer .f-2 ul {
+  margin-top: 20px;
+}
+#footer .f-2 ul li a {
+  color: #787878;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+}
+#footer .f-2 .input-effect input {
+  width: 351px;
+  line-height: 50px;
+  border: none;
+  padding: 0px 10px;
+}
+#footer .f-2 .input-effect button {
+  right: 4px;
+  top: 0;
+  position: absolute;
+  background-color: #E90024;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+  height: 50px;
+}/*# sourceMappingURL=style.css.map */

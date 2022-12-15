@@ -1,0 +1,55 @@
+@import "../Variable/fontfamily";
+@import "../basic/_common";
+@import "../mixinit/fontStyle";
+#work{
+
+    .card-sec{
+        text-align: center;
+        background-color: #FFFFFF;
+        padding: 70px 55px;
+        box-shadow: 2px 2px 14px #f4f4f4;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        margin-top: 55px;
+        .save-d{
+            background-color: #E900241A;
+            @include fontstyle($Inter, 18px,500, #E90024);
+        }
+        h5{
+            text-align: start;
+            @include fontstyle($Inter, 25px, 500, #1E1E1E);
+            margin-top: 30px;
+        }
+        ul{
+            text-align: start;
+            li{
+                margin-top: 15px;
+                @include fontstyle($Inter, 16px, 400, #787878);
+                i{
+                    color: #5EBD78;
+                    margin-right: 5px;
+                }
+            }
+        }
+        h6{
+            text-align: start;
+            @include fontstyle($Inter, 45px, 600, #1E1E1E);
+            margin-top: 30px;
+        }
+        .prg{
+            margin-top: 30px;
+            border: 1px solid #E90024;
+            @include fontstyle($Inter, 20px, 400, #E90024);
+            &:hover{
+                background-color: #E90024;
+                color: #FFFFFF;
+            }
+        }
+
+        
+   }
+
+}

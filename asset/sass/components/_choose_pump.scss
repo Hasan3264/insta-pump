@@ -1,0 +1,45 @@
+@import "../Variable/fontfamily";
+@import "../basic/_common";
+@import "../mixinit/fontStyle";
+
+#choose_pum {
+    padding: 150px 0px;
+    background-color: #F4F4F4;
+    margin-top: 80px;
+    position: relative;
+
+    .img-p {
+        position: absolute;
+        right: 100px;
+        top: -70px;
+    }
+
+    .common-header {
+        margin-top: 0px !important;
+    }
+
+    .card-sec {
+        margin-top: 70px;
+
+        img {
+            width: 60px;
+            margin-bottom: 35px;
+        }
+
+        h5 {
+            @include fontstyle($Inter, 25px, 600, #1E1E1E);
+            margin-bottom: 25px;
+        }
+
+        p {
+            @include fontstyle($Inter, 16px, 400, #787878);
+
+        }
+    }
+}
+
+// .card{
+//      h5 {
+//         @include fontstyle($Inter, 45px, 600, #000);
+//     }
+// }

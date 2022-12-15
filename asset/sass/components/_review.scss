@@ -1,0 +1,70 @@
+@import "../Variable/fontfamily";
+@import "../basic/_common";
+@import "../mixinit/fontStyle";
+
+#review {
+    .card-part {
+        width: 32%;
+        border-radius: 10px;
+        box-shadow: 1px 0px 14px rgba(78, 78, 78, 0.253);
+        margin-top: 40px;
+        padding-bottom: 20px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        .ch {
+            justify-content: space-between;
+            padding: 20px;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+
+            h5 {
+                @include fontstyle($Inter, 20px, 500, #1E1E1E);
+                align-self: center;
+            }
+
+            a {
+                align-self: center;
+                color: #1E1E1E;
+            }
+        }
+
+        .r-m {
+            border-radius: 10px;
+            margin: auto;
+            width: 90%;
+            padding: 30px;
+            background-color: #f1f1f1;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            ul{
+                li{
+                    color: #FFA723;
+                    margin-left: 5px;
+                }
+            }
+            p{
+                margin-top: 20px;
+                @include fontstyle($Inter, 16px, 400, #787878);
+            }
+        }
+        .c-b{
+            margin-top: 10px;
+            padding: 0px 30px;
+            ul{
+                li{
+                    margin-right: 10px;
+                }
+            }
+            i{
+                color: #c4c4c4;;
+            }
+        }
+    }
+}
