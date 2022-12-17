@@ -141,7 +141,7 @@
             transition: 0.6s;
         }
 
-        .effect-19~ label {
+        .effect-19~label {
             position: absolute;
             left: 10px;
             top: 10px;
@@ -160,21 +160,157 @@
             color: #3399FF;
             transition: 0.3s;
         }
-        
+
+
+        .preloader {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-image: url('./asset/images/Ripple-1s-200px.gif');
+            background-repeat: no-repeat;
+            background-color: #FFF;
+            background-position: center;
+        }
+
+
+
+        .button {
+            display: inline-block;
+            position: relative;
+        }
+
+        .button.is-play {
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .button.is-play .button-outer-circle {
+            background: rgba(240, 4, 102, 0.452);
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .button.is-play .button-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            transform: translate(-50%, -50%);
+        }
+
+        .button.is-play .button-icon .triangle {
+            -webkit-animation: fadeIn 7s ease;
+            animation: fadeIn 7s ease;
+        }
+
+        .button.is-play .button-icon .path {
+            stroke-dasharray: 90;
+            stroke-dashoffset: 0;
+            -webkit-animation: triangleStroke 3s;
+            animation: triangleStroke 3s;
+            -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+        }
+
+        .has-scale-animation {
+            -webkit-animation: smallScale 3s infinite;
+            animation: smallScale 3s infinite;
+        }
+
+        .has-delay-short {
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+        }
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes triangleStroke {
+            from {
+                stroke-dashoffset: 90;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes triangleStroke {
+            from {
+                stroke-dashoffset: 90;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @-webkit-keyframes smallScale {
+            from {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            to {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        @keyframes smallScale {
+            from {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            to {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="preloader"></div>
     <!-- =================================================================================================================
                                  nav-ber part starts
     ================================================================================================================= -->
-     <nav id="navbar" class="navbar navbar-expand-md main-manu p-0 navigation">
+    <nav id="navbar" class="navbar navbar-expand-md main-manu p-0 navigation">
         <div class="container px-0">
             <div class="logo-hidden">
-               <a href=""><img src="./asset/images/navver/Logo_with_TM_200x 1.png" alt=""></a>
-           </div>
-           
+                <a href=""><img src="./asset/images/navver/Logo_with_TM_200x 1.png" alt=""></a>
+            </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -195,7 +331,7 @@
                         <a class="nav-link" href="#product">FAQs</a>
                     </li>
                 </ul>
-            
+
             </div>
             <div class="navlast">
                 <ul class="d-flex">
@@ -207,8 +343,8 @@
 
         </div>
 
-    </nav> 
-   
+    </nav>
+
     <!-- =================================================================================================================
                                  nav-ber part ends 
     ================================================================================================================= -->
@@ -229,7 +365,8 @@
                     <a href="" class="btn">Get Started</a>
                 </div>
                 <div class="col-lg-7 col-md-12  main-part">
-                    <img class="main-p" style="width: 290px; margin-left: 45%;" src="./asset/images/banner/Group 13.png" alt="">
+                    <img class="main-p" style="width: 290px; margin-left: 45%;" src="./asset/images/banner/Group 13.png"
+                        alt="">
                     <div class="card">
                         <div class="card-head">
                             <p>‘’I got over 3,500 new followers my first month, and it helped me catapult my influencer
@@ -351,9 +488,29 @@
         <div class="container">
             <div class="col-lg-12 pump-part position-relative">
                 <img class="w-100 img-fluid" src="./asset/images/video/Rectangle 29.png" alt="">
-                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/b8s0DSQJ9Hk"><img
-                        class="position-absolute vanubox-video-butt" style="left: 50%; top: 50%; transform: translate(-50%, -50%);"
-                        src="./asset/images/video/Group 79.png" alt=""></a>
+
+                <a class="venobox button is-play position-absolute vanubox-video-butt" data-autoplay="true" data-vbtype="video" href="https://youtu.be/b8s0DSQJ9Hk" style="left: 50%; top: 50%;">
+                    <div class="button-outer-circle has-scale-animation"></div>
+                    <div class="button-outer-circle has-scale-animation has-delay-short"></div>
+                    <div class="button-icon is-play">
+                        <svg height="100%" width="100%" fill="#f857a6">
+                            <polygon class="triangle" points="5,0 30,15 5,30" viewBox="0 0 30 15"></polygon>
+                            <path class="path" d="M5,0 L30,15 L5,30z" fill="none" stroke="#000" stroke-width="1">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+
+
+                <!-- <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/b8s0DSQJ9Hk">
+                    
+                    <img
+                    class="position-absolute vanubox-video-butt"
+                    style="left: 50%; top: 50%; transform: translate(-50%, -50%);"
+                    src="./asset/images/video/Group 79.png" alt="">
+                    
+                </a> -->
+
             </div>
         </div>
     </section>
@@ -694,7 +851,7 @@
                 </div>
             </div>
             <div class="back-to-top">
-                    <i class="bi bi-arrow-down-up"></i>
+                <i class="bi bi-arrow-down-up"></i>
             </div>
         </div>
     </footer>
@@ -714,8 +871,8 @@
         new VenoBox({
             selector: ".venobox"
         });
-        $(".navbar-toggler").click(function(){
-               $(".navlast").toggle(1000);
+        $(".navbar-toggler").click(function () {
+            $(".navlast").toggle(1000);
         });
     </script>
     <script>
@@ -735,6 +892,8 @@
 
         items.forEach(item => item.addEventListener('click', toggleAccordion));
     </script>
+
+
 </body>
 
 </html>

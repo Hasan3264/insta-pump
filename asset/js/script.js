@@ -19,7 +19,9 @@ $(function () {
     });
  
 
-   
+   $(window).load(function() {
+     $('.preloader').fadeOut(10000);
+    });
 
     //     //back to top
     $('.back-to-top').click(function () {
