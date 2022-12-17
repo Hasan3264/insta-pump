@@ -1,16 +1,52 @@
 
-@media (min-width: 768px) {
-  
-}
 @media (min-width: 992px) and (max-width: 1199px) {
-
+ #navbar .logo-hidden {
+  margin-right: 30px;
+}
+#banner .main-part .img-p{
+  display: none;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  #navbar .logo-hidden {
+  margin-right: 30px;
+}
+#navbar .navbar-nav li {
+  margin-right: -3px;
+}
+#banner .main-part .img-p{
+  display: none;
+}
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
 
+#navbar{margin-top: 0;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+  background-color: #f1f1f1e7;
+  line-height: 60px;
+}
+#navbar .navlast{
+  margin-right: 0;
+}
+#navbar .navbar-toggler:focus .navlast{
+  display: none;
+}
+#navbar .navbar-toggler:focus {    
+  box-shadow: 0 0 0 0;
+}
+#navbar .logo-hidden {
+  display: none;
+}
+#banner .main-part .img-p{
+  display: none;
+}
+#review .card-part {
+  width: 48%;
+}
 }
 
 @media (max-width: 575.98px) {
@@ -27,9 +63,6 @@
 }
 #navbar .navlast{
   margin-right: 0;
-}
-#navbar .navbar-toggler:focus .navlast{
-  display: none;
 }
 #navbar .navbar-toggler:focus {    
   box-shadow: 0 0 0 0;
